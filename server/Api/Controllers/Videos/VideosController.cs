@@ -23,9 +23,32 @@ namespace Api.Controllers.Videos
 
             if (!cargaInicialRealizada)
             {
-                var video1 = new VideoRequest { Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af1"), Titulo = "Titulo 1", UrlDoVideo = "UrlDoVideo 1", Descricao = "Descricao 1", UrlDaImagem = "UrlDaImagem 1" };
-                var video2 = new VideoRequest { Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af2"), Titulo = "Titulo 2", UrlDoVideo = "UrlDoVideo 2", Descricao = "Descricao 2", UrlDaImagem = "UrlDaImagem 2" };
-                var video3 = new VideoRequest { Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af3"), Titulo = "Titulo 3", UrlDoVideo = "UrlDoVideo 3", Descricao = "Descricao 3", UrlDaImagem = "UrlDaImagem 3" };
+                var video1 = new VideoRequest 
+                { 
+                    Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af1"), 
+                    Titulo = "Novo Canal da Hiper!", 
+                    UrlDoVideo = "https://www.youtube.com/watch?v=-2J16V-xl5g", 
+                    Descricao = "Esse é o novo canal da Hiper! <br/>Por aqui vamos compartilhar mais informações sobre o nosso produto e dicas que ajudarão você a ter mais sucesso no seu negócio!", 
+                    UrlDaImagem = "https://i.ytimg.com/vi/-2J16V-xl5g/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCgED7suQuXLGz687-avCJlwy_iGg" 
+                };
+
+                var video2 = new VideoRequest 
+                { 
+                    Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af3"),
+                    Titulo = "Webinar #01: Como encontrar mais oportunidades de vendas",
+                    UrlDoVideo = "https://www.youtube.com/watch?v=4LHDGZTaa-c",
+                    Descricao = "Nosso COO, Marinho Silva e nosso Head de Expansão, Jadson Pollheim, dão dicas para você encontrar as melhores oportunidades de vendas.",
+                    UrlDaImagem = "https://i.ytimg.com/vi/7VLKE26Nxlk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDMweNn3kNTawTkiSFmwf0dhBW_0w"
+                };
+
+                var video3 = new VideoRequest 
+                { 
+                    Id = Guid.Parse("60db4ee8-68ae-4e4a-8f0a-1d8386dc8af2"), 
+                    Titulo = "Webinar #02: Planejamento Financeiro", 
+                    UrlDoVideo = "https://www.youtube.com/watch?v=7VLKE26Nxlk", 
+                    Descricao = "Nosso COO, Marinho Silva e nosso Controller, Cleiton Masche, estiveram ao vivo no Facebook compartilhando dicas para você iniciar o planejamento financeiro da sua empresa.", 
+                    UrlDaImagem = "https://i.ytimg.com/vi/4LHDGZTaa-c/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLClb-th-ekP-gMT9mWk-56o4Y8I1Q"     
+                };
 
                 Post(video1);
                 Post(video2);

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Hiperflix</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://use.fontawesome.com/482bc1a650.js"></script>
+
+    <style>
+
+        .video-card {
+            position: relative;
+            border-radius: 15px;
+            color: #fff;
+            overflow: hidden;
+            min-height: 300px;
+            max-height: 300px;
+            margin-bottom: 50px;
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            box-shadow: 0 4px 7px #999;
+        }
+
+        .video-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            opacity: .2;
+        }
+
+        .video-card .title {    
+            text-align: left;
+            font-size: 1.3em;
+            margin-top: 0;
+            font-family: Montserrat, 'sans-serif';
+            font-weight: 700;
+            line-height: 1em;
+            color: #333;    
+        }
+
+        .video-card .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .adm-options {
+            position: relative;
+            text-align: center;
+            margin-top: -40px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="logo">Hiperflix</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="video-card" style="background-image: url(images/img01.png)">
+                    <div class="content">
+                        <h3 class="title">Primeiro video</h3>
+                        <a href="assistir.html" class="btn btn-primary btn-block">Assistir</a>
+                    </div>
+                </div>
+                <div class="adm-options">
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-edit"></i> Editar
+                    </button>
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-trash"></i> Excluir
+                    </button>
+                </div>  
+            </div>
+            <div class="col-sm-4">
+                <div class="video-card" style="background-image: url(images/img01.png)">
+                    <div class="content">
+                        <h3 class="title">Primeiro video</h3>
+                        <a href="assistir.html" class="btn btn-primary btn-block">Assistir</a>
+                    </div>
+                </div>
+                <div class="adm-options">
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-edit"></i> Editar
+                    </button>
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-trash"></i> Excluir
+                    </button>
+                </div>  
+            </div>
+            <div class="col-sm-4">
+                <div class="video-card" style="background-image: url(images/img01.png)">
+                    <div class="content">
+                        <h3 class="title">Primeiro video</h3>
+                        <a href="assistir.html" class="btn btn-primary btn-block">Assistir</a>
+                    </div>
+                </div>
+                <div class="adm-options">
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-edit"></i> Editar
+                    </button>
+                    <button type="button" class="btn btn-link">
+                        <i class="fa fa-trash"></i> Excluir
+                    </button>
+                </div>  
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
