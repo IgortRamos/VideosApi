@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="container">
+        <h1 class="logo">Hiperflix</h1>
+        <router-view/>
+    </div>
   </div>
 </template>
 
@@ -12,12 +14,64 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html, body, #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      padding-top: 20px;
+      background: #f3f3f3;
+  }
+
+  h1, 
+  h2, 
+  h3 {
+      font-family: Montserrat, 'sans-serif';
+  }
+
+  h1 {
+      font-size: 2.7em;
+      font-weight: 900;
+      margin-bottom: 50px;
+      color: #8e44ad;
+  }
+
+  h2 {
+      font-size: 2.5em;
+      font-weight: 900;
+  }
+
+  .margin-top {
+      margin-top: 20px;
+  }
+
+  .no-margin-bottom {
+      margin-bottom: 0;
+  }
+
+  .logo {
+      font-family: "Bebas", sans-serif;
+      font-size: 3.5em;
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+  }
+
+  .box {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 7px #999;
+  }
+
+  .box .title {
+      font-size: 0.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+  }
 </style>
